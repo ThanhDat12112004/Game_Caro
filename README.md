@@ -55,10 +55,6 @@ Game Caro Online là một ứng dụng web hiện đại cho phép người ch�
 ```sql
 -- Tạo database
 CREATE DATABASE caro_game;
-
--- Tạo user (tùy chọn)
-CREATE USER postgres WITH PASSWORD 'admin';
-GRANT ALL PRIVILEGES ON DATABASE caro_game TO postgres;
 ```
 
 ### 2. Cấu Hình Backend
@@ -68,9 +64,9 @@ GRANT ALL PRIVILEGES ON DATABASE caro_game TO postgres;
 cd backend
 
 # Cập nhật file application.properties nếu cần
-# spring.datasource.url=jdbc:postgresql://localhost:5432/caro_game
-# spring.datasource.username=postgres  
-# spring.datasource.password=admin
+# spring.datasource.url=
+# spring.datasource.username=
+# spring.datasource.password=
 
 # Cài đặt dependencies và chạy
 ./mvnw clean install
@@ -213,33 +209,17 @@ cd frontend
 npm run build
 ```
 
-### Docker Support (Tùy chọn)
-```dockerfile
-# Có thể thêm Dockerfile cho deployment
-```
-
-## 🤝 Contributing
-
-1. Fork project
-2. Tạo feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Tạo Pull Request
-
 ## 📝 License
 
 Dự án này được phát triển cho mục đích học tập - Đồ án J2EE.
 
-## 👥 Team
+## 👥 Author
 
-- **Developer**: [Tên của bạn]
+- **Developer**: Dương Thành Đạt
 - **Course**: Lập trình Java Enterprise (J2EE)
 - **Year**: 2025
 
 ## 📞 Liên Hệ
-
-- Email: [your-email@example.com]
-- GitHub: [your-github-username]
 
 ---
 
