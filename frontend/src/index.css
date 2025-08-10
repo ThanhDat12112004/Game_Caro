@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global emoji support */
+* {
+  font-feature-settings: 'liga' on, 'kern' on;
+  text-rendering: optimizeLegibility;
+}
+
+.emoji,
+[data-emoji],
+.symbol-preview,
+.symbol-input-group input {
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', 'Twemoji Mozilla',
+    'Android Emoji', system-ui, sans-serif !important;
+  font-variant-emoji: emoji;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

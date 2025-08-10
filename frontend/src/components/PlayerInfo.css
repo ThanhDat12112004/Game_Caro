@@ -1,0 +1,118 @@
+.player-info {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.player-info h3 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+}
+
+.players-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.player.current-player {
+  border-color: #4caf50;
+  background-color: #f0fff0;
+  transform: scale(1.02);
+}
+
+.player-symbol {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.player-symbol.x {
+  background-color: #ffebee;
+  color: #e74c3c;
+  border: 2px solid #e74c3c;
+}
+
+.player-symbol.o {
+  background-color: #e3f2fd;
+  color: #3498db;
+  border: 2px solid #3498db;
+}
+
+.player-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.turn-indicator {
+  color: #4caf50;
+  font-weight: bold;
+  margin-left: auto;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.game-result {
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  border-radius: 6px;
+  padding: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.game-result h4 {
+  margin: 0 0 10px 0;
+  color: #3c763d;
+}
+
+.game-result p {
+  margin: 0;
+  color: #3c763d;
+  font-weight: bold;
+}
+
+.waiting-message {
+  background-color: #fcf8e3;
+  border: 1px solid #faebcc;
+  border-radius: 6px;
+  padding: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.waiting-message p {
+  margin: 0;
+  color: #8a6d3b;
+  font-style: italic;
+}

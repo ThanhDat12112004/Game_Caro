@@ -1,0 +1,378 @@
+.App {
+  text-align: center;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.login-container h1 {
+  color: #2c3e50;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 300px;
+}
+
+.input-field {
+  padding: 12px 16px;
+  border: 2px solid #e1e8ed;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.connect-button,
+.create-button {
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.connect-button {
+  background: #007bff;
+  color: white;
+}
+
+.connect-button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.create-button {
+  background: #28a745;
+  color: white;
+}
+
+.create-button:hover {
+  background: #1e7e34;
+  transform: translateY(-2px);
+}
+
+.reset-button,
+.disconnect-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-button {
+  background-color: #f39c12;
+  color: white;
+}
+
+.reset-button:hover {
+  background-color: #e67e22;
+  transform: translateY(-1px);
+}
+
+.disconnect-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.disconnect-button:hover {
+  background-color: #c0392b;
+  transform: translateY(-1px);
+}
+
+.back-button {
+  background: #6c757d;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background: #545b62;
+}
+
+.game-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.game-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.game-container h1 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.game-info {
+  text-align: left;
+}
+
+.game-info p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.game-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.game-board-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: auto;
+  max-height: 70vh;
+}
+
+.chat-container {
+  width: 350px;
+  height: 600px;
+  flex-shrink: 0;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.loading-container h2 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+
+.game-lobby {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.game-lobby h1 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+}
+
+.user-info p {
+  margin: 0 0 15px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+.user-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skin-shop-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.skin-shop-button:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.admin-button {
+  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.admin-button:hover {
+  background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(243, 156, 18, 0.4);
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+  transform: translateY(-1px);
+}
+
+.lobby-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.divider {
+  margin: 15px 0;
+  color: #666;
+  font-style: italic;
+}
+
+.manual-join {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.manual-join .divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #666;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.manual-join .lobby-form {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px dashed #dee2e6;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+
+  .game-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .game-info {
+    text-align: center;
+  }
+
+  .game-container h1 {
+    font-size: 2rem;
+  }
+
+  .login-container h1 {
+    font-size: 2rem;
+  }
+
+  .login-form {
+    min-width: 280px;
+    padding: 30px 20px;
+  }
+
+  .game-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .chat-container {
+    width: 100%;
+    height: 400px;
+  }
+
+  .game-board-container {
+    max-height: 50vh;
+  }
+}

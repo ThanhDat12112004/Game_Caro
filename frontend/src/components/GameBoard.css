@@ -1,0 +1,79 @@
+.game-board {
+  display: grid;
+  border: 2px solid #333;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 1px;
+  max-width: 90vw;
+  max-height: 80vh;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.board-row {
+  display: flex;
+}
+
+.board-cell {
+  border: 1px solid #ccc;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  min-width: 15px;
+  min-height: 15px;
+}
+
+.board-cell:hover:not(:disabled) {
+  background-color: #e8f4fd;
+  transform: scale(1.05);
+}
+
+.board-cell:disabled {
+  cursor: not-allowed;
+}
+
+.board-cell.filled {
+  cursor: not-allowed;
+}
+
+.board-cell.x {
+  color: #e74c3c;
+  background-color: #ffeaea;
+}
+
+.board-cell.o {
+  color: #3498db;
+  background-color: #eaf4fd;
+}
+
+.board-cell:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+/* Emoji support for piece skins */
+.piece-emoji {
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', 'Android Emoji',
+    'EmojiSymbols', 'Helvetica Neue', sans-serif;
+  font-size: 1.2em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.board-cell .piece-emoji {
+  pointer-events: none;
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+
+.board-cell:hover .piece-emoji {
+  transform: scale(1.1);
+}

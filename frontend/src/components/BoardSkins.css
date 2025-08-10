@@ -1,0 +1,177 @@
+/* Board Skin Styles */
+
+/* Classic Board (Default) */
+.board-skin-classic .game-board {
+  background-color: #f9f9f9;
+  border: 2px solid #333;
+}
+
+.board-skin-classic .board-cell {
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.board-skin-classic .board-cell:hover:not(:disabled) {
+  background-color: #e8f4fd;
+}
+
+/* Ocean Theme */
+.board-skin-ocean .game-board {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: 2px solid #4c63d2;
+  box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+}
+
+.board-skin-ocean .board-cell {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(76, 99, 210, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.board-skin-ocean .board-cell:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+}
+
+/* Forest Theme */
+.board-skin-forest .game-board {
+  background: linear-gradient(135deg, #56ab2f 0%, #a8e6cf 100%);
+  border: 2px solid #4a7c59;
+  box-shadow: 0 0 20px rgba(86, 171, 47, 0.3);
+}
+
+.board-skin-forest .board-cell {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(74, 124, 89, 0.5);
+}
+
+.board-skin-forest .board-cell:hover:not(:disabled) {
+  background: rgba(168, 230, 207, 0.8);
+  box-shadow: 0 0 8px rgba(86, 171, 47, 0.4);
+}
+
+/* Sunset Theme */
+.board-skin-sunset .game-board {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+  border: 2px solid #ff6b9d;
+  box-shadow: 0 0 20px rgba(255, 154, 158, 0.4);
+}
+
+.board-skin-sunset .board-cell {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 107, 157, 0.4);
+}
+
+.board-skin-sunset .board-cell:hover:not(:disabled) {
+  background: rgba(254, 207, 239, 0.7);
+  box-shadow: 0 0 8px rgba(255, 154, 158, 0.5);
+}
+
+/* Dark Theme */
+.board-skin-dark .game-board {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  border: 2px solid #1a252f;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.board-skin-dark .board-cell {
+  background: rgba(52, 73, 94, 0.8);
+  border: 1px solid #1a252f;
+  color: white;
+}
+
+.board-skin-dark .board-cell:hover:not(:disabled) {
+  background: rgba(52, 73, 94, 1);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Neon Theme */
+.board-skin-neon .game-board {
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+.board-skin-neon .board-cell {
+  background: rgba(26, 26, 46, 0.9);
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  box-shadow: inset 0 0 5px rgba(0, 255, 255, 0.2);
+}
+
+.board-skin-neon .board-cell:hover:not(:disabled) {
+  background: rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+/* Golden Theme */
+.board-skin-golden .game-board {
+  background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+  border: 2px solid #e67e22;
+  box-shadow: 0 0 20px rgba(247, 151, 30, 0.4);
+}
+
+.board-skin-golden .board-cell {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(230, 126, 34, 0.6);
+}
+
+.board-skin-golden .board-cell:hover:not(:disabled) {
+  background: rgba(255, 210, 0, 0.3);
+  box-shadow: 0 0 10px rgba(247, 151, 30, 0.5);
+}
+
+/* Ice Theme */
+.board-skin-ice .game-board {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  border: 2px solid #a8c8ec;
+  box-shadow: 0 0 20px rgba(168, 200, 236, 0.4);
+}
+
+.board-skin-ice .board-cell {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(168, 200, 236, 0.6);
+  backdrop-filter: blur(2px);
+}
+
+.board-skin-ice .board-cell:hover:not(:disabled) {
+  background: rgba(207, 222, 243, 0.6);
+  box-shadow: 0 0 8px rgba(168, 200, 236, 0.6);
+}
+
+/* Animation effects for board skins */
+.board-skin-neon .board-cell {
+  animation: neonPulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes neonPulse {
+  from {
+    box-shadow: inset 0 0 5px rgba(0, 255, 255, 0.2);
+  }
+  to {
+    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.4);
+  }
+}
+
+.board-skin-golden .board-cell:hover:not(:disabled) {
+  animation: goldenShimmer 0.5s ease;
+}
+
+@keyframes goldenShimmer {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive adjustments for board skins */
+@media (max-width: 768px) {
+  .board-skin-neon .game-board,
+  .board-skin-ocean .game-board,
+  .board-skin-forest .game-board,
+  .board-skin-sunset .game-board,
+  .board-skin-dark .game-board,
+  .board-skin-golden .game-board,
+  .board-skin-ice .game-board {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}
